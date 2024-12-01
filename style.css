@@ -115,11 +115,13 @@
             height: 100vh;
         }
 
-        .campe_apresentacion{
-            background-color: rgba(22, 22, 255, 0);
-            text-align: center;
+        .content{
+            display: inline-block;
             width: 90vw;
             height: 100%;
+        }
+        .campe_apresentacion{
+            text-align: center;
         }
 
         .camper_entrada{
@@ -132,9 +134,64 @@
             color: rgb(212, 0, 255);
         }
 
-        .camper_entrada .entrada_icon{
+        .camper_entrada .main_icon{
             margin-right: 20px;
             margin-left: 20px;
-            margin-top: 5px;
+            margin-top: 0px;
             font-size: 30px;
+        }
+
+        .campe_banner{
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            display: flex;
+            width: 100%;
+            height: 50%;
+        }
+
+        .campe_banner .banner{
+            display: inline-block;
+            max-width: 800px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .banner img{
+            border-radius: 20px;
+            object-fit: cover;
+            margin-top: 0px;
+            width: 100%;
+            transition: 0.5s;
+        }
+
+        .campe_promotion{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .text_promotion{
+            display: inline-flex;
+            transition: 0.5s;
+        }
+        .text_promotion:hover{
+            color: rgb(212, 0, 255);
+        }
+
+        .text_promotion span{
+            margin-right: 10px;
+            margin-left: 10px;
+            font-size: 30px;
+        }
+
+        .campe_games_promotion{
+            justify-content: space-around;
+            display: flex;
+            width: 100%;
+        }
+
+        .campe_games_promotion ul{
+            text-decoration: none;
+            display: inline-block;
+            list-style: none;
         }
