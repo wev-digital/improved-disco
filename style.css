@@ -1,4 +1,3 @@
-        /*Parte da Web total*/
         *{
             box-sizing: border-box;
             padding: 0;
@@ -9,13 +8,12 @@
             font-family: 'Courier New', Courier, monospace;
             background-color: rgb(255, 255, 255);
             color: rgb(255, 255, 255);
-            background-image: url(https://images2.alphacoders.com/128/thumb-1920-1281551.jpg);
+            background-image: url(https://images.alphacoders.com/133/thumb-1920-1339887.png);
             background-attachment: fixed;
             background-position: center;
             background-size: cover;
         }
 
-        /*Parte do menu oculto*/
         nav{
             background-color: rgb(0, 0, 0);
             justify-content: space-around;
@@ -39,6 +37,10 @@
             margin-left: 30px;
             margin-top: 5px;
             font-size: 24px;
+            transition: 0.5s;
+        }
+        .camper_logo h1:hover{
+            color: rgb(212, 0, 255);
         }
 
         span{
@@ -67,7 +69,7 @@
             transition: 0.5s;
         }
         .campe_list li a:hover{
-            color: rgb(0, 255, 0);
+            color: rgb(212, 0, 255);
             transform: scale(1.2);
         }
 
@@ -78,26 +80,27 @@
         .mobile button{
             cursor: pointer;
             display: none;
-            width: 32px;
-            height: 32px;
+            width: 35px;
+            height: 35px;
         }
 
         @media (max-width: 720px){
             .campe_list{
-                background-color: rgba(0, 0, 0, 0.918);
+                background-color: rgba(0, 0, 0, 0.932);
                 justify-content: space-around;
                 flex-direction: column;
                 position: absolute;
                 display: none;
                 width: 100vw;
                 height: 92vh;
+                z-index: 1;
                 right: 0;
                 top: 8vh;
             }
 
             .campe_list li{
                 margin-top: 15px;
-                margin-left: 2;
+                margin-left: 10px;
             }
 
             .mobile button{
@@ -105,27 +108,33 @@
             }
         }
 
-        /*Parte do conteúdo da web*/
         main{
             justify-content: center;
-            align-items: center;
             display: flex;
+            width: 100%;
+            height: 100vh;
         }
 
-        .campe_banner {
-            justify-content: center;
-            align-items: center;
+        .campe_apresentacion{
+            background-color: rgba(22, 22, 255, 0);
             text-align: center;
-            margin-top: 10px;
-            max-width: 800px;
-            max-height: 700px;
-            display: flex;
-            width: 100%;
-            height: 60vh;
-        }
-        
-        .campe_banner img {
-            object-fit: contain;
-            width: 100%;
+            width: 90vw;
             height: 100%;
+        }
+
+        .camper_entrada{
+            display: inline-flex;
+            margin-top: 30px;
+            transition: 0.5s;
+        }
+
+        .camper_entrada:hover{
+            color: rgb(212, 0, 255);
+        }
+
+        .camper_entrada .entrada_icon{
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 5px;
+            font-size: 30px;
         }
